@@ -1,0 +1,127 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #FFF8E1;
+    color: #333;
+    padding: 20px;
+}
+
+/* Cabeçalho do jornal */
+header.topo {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #D2691E;
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+hr {
+    margin-top: 10px;
+    border: 1px solid #D2691E;
+}
+
+/* Seções como manchetes */
+.manchete, .entrada-diario {
+    background-color: #FFF;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #D2691E;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.manchete h2, .entrada-diario h2 {
+    font-size: 2rem;
+    color: #C04000;
+}
+
+.data {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Galeria de fotos */
+.galeria {
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2rem;
+    color: #C04000;
+    margin-bottom: 10px;
+}
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-fotos img {
+    width: 100%;
+    border: 2px solid #D2691E;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Depoimentos */
+.depoimentos blockquote {
+    font-style: italic;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #FFA07A;
+    background-color: #FFEFDB;
+}
+
+/* Rodapé */
+footer.rodape {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FFDAB9;
+    border-top: 2px solid #D2691E;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer input, footer textarea {
+    padding: 10px;
+    border: 1px solid #D2691E;
+    font-family: 'Georgia', serif;
+}
+
+footer button {
+    padding: 10px;
+    background-color: #FF7F50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer button:hover {
+    background-color: #FF6347;
+}
