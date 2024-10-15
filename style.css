@@ -37,6 +37,27 @@ hr {
     border: 1px solid #D2691E;
 }
 
+/* Menu */
+nav {
+    margin: 20px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #D2691E;
+    font-weight: bold;
+}
+
 /* Seções como manchetes */
 .manchete, .entrada-diario {
     background-color: #FFF;
