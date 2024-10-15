@@ -68,20 +68,28 @@ hr {
 
 .grid-fotos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta para diferentes tamanhos de tela */
+    grid-template-columns: repeat(3, 1fr); /* Ajusta para 3 colunas */
     gap: 10px;
     padding: 10px;
 }
 
-.foto {
-    text-align: center; /* Centraliza a legenda abaixo da imagem */
+.grid-fotos .foto {
+    position: relative; /* Permite posicionar a imagem dentro da div */
+    overflow: hidden; /* Oculta qualquer parte da imagem que ultrapasse a div */
+    border: 2px solid #D2691E; /* Borda da foto */
+    border-radius: 5px; /* Bordas arredondadas, se desejar */
+    height: 200px; /* Define uma altura fixa para as divs que contêm as imagens */
 }
 
 .grid-fotos img {
-    max-width: 100%; /* Impede que as imagens ultrapassem a largura do contêiner */
-    height: auto; /* Mantém a proporção das imagens */
-    border: 2px solid #D2691E;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%; /* A imagem ocupa toda a largura do contêiner */
+    height: 100%; /* A imagem ocupa toda a altura do contêiner */
+    object-fit: cover; /* A imagem cobre completamente o contêiner, recortando o que excede */
+    transition: transform 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.grid-fotos img:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
 }
 
 /* Depoimentos */
@@ -130,4 +138,5 @@ footer button {
 footer button:hover {
     background-color: #FF6347;
 }
+
 
