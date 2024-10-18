@@ -91,8 +91,8 @@ nav {
 
 .grid-fotos {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+    grid-template-columns: repeat(3, 1fr); /* Alterado para 3 colunas */
+    gap: 20px;
     padding: 10px;
 }
 
@@ -108,8 +108,9 @@ nav {
     justify-content: space-between;
     border-radius: 15px;
     overflow: hidden;
-    width: 180px;
-    height: 220px;
+    width: 100%;  /* Aumenta a largura para ocupar a coluna */
+    max-width: 300px; /* Limita o tamanho máximo da imagem */
+    height: 300px;    /* Aumenta a altura */
     margin: 0 auto;
 }
 
