@@ -92,7 +92,7 @@ nav {
 .grid-fotos {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Alterado para 3 colunas */
-    gap: 20px;
+    gap: 15px;
     padding: 10px;
 }
 
@@ -108,16 +108,18 @@ nav {
     justify-content: space-between;
     border-radius: 15px;
     overflow: hidden;
-    width: 100%;  /* Aumenta a largura para ocupar a coluna */
-    max-width: 300px; /* Limita o tamanho máximo da imagem */
-    height: 300px;    /* Aumenta a altura */
+    width: 280px; /* Largura aumentada */
+    height: 300px; /* Altura aumentada */
     margin: 0 auto;
 }
 
 /* Imagem quadrada dentro do Polaroid */
 .foto-polaroid img {
     width: 100%;
-    height: 100%;
+    height
+        
+    
+    : 70%; /* A imagem ocupa 70% da altura */
     object-fit: cover;
     border-radius: 10px;
 }
@@ -125,9 +127,11 @@ nav {
 /* Legenda da imagem */
 .foto-polaroid p {
     margin-top: 5px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #555;
     text-align: center;
+    height: 30%; /* A legenda ocupa 30% da altura */
+    overflow-y: auto; /* Adiciona rolagem caso o texto seja longo */
 }
 
 /* Depoimentos */
