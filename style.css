@@ -108,8 +108,8 @@ nav {
     justify-content: space-between;
     border-radius: 15px;
     overflow: hidden;
-    width: 280px; /* Largura aumentada */
-    height: 300px; /* Altura aumentada */
+    width: 200px; /* Largura aumentada */
+    height: 280px; /* Altura aumentada */
     margin: 0 auto;
 }
 
