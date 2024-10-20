@@ -109,7 +109,7 @@ nav {
     border-radius: 15px;
     overflow: hidden;
     aspect-ratio: 3 / 4; /* Mantém a proporção de Polaroid */
-    max-width: 250px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
