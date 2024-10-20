@@ -124,11 +124,13 @@ nav {
 
 /* Legenda da imagem */
 .foto-polaroid p {
-    margin-top: 5px;
+    margin-top: 0; /* Remove a margem superior */
+    margin-bottom: 5px; /* Ajuste a margem inferior se necessário */
     font-size: 1rem;
     color: #555;
     text-align: center;
 }
+
 
 /* Depoimentos */
 .depoimentos blockquote {
